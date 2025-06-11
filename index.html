@@ -1,0 +1,317 @@
+<html>
+<head>
+<title>Ontology Alignment Evaluation Initiative::2017</title>
+<link rel="stylesheet" type="text/css" href="style.css" />
+<style type="text/css">
+span.important { color:red; }
+</style>
+</head>
+<body>
+<div class="header">
+<a style="color: grey; line-height: 5mm;" href="http://oaei.ontologymatching.org/2017/">Ontology Alignment Evaluation Initiative - OAEI 2017 Campaign</a><a href="http://oaei.ontologymatching.org/"><img src="../oaeismall.jpg" alt="OAEI" style="float:right; margin-left: 5pt; border-style:none;"/></a>
+</div>
+
+<div class="yellowbar">
+<b>OAEI 2017 results</b> available <a href="results/index.html">here</a>.<br />
+<b>IBM Research</b> <b><a href="ibm_prize.html">sponsors a prize</a></b> for the instance matching tracks<br />
+<!--We have <b>updated</b> the description of the <b><a href="http://islab.di.unimi.it/content/im_oaei/2017/">Instance Matching track</a></b><br /-->
+<!--b>Extended deadline</b> for the <a href="https://project-hobbit.eu/challenges/om2017/">HOBBIT Link Discovery</a> submission: <b>September 15</b><br />
+<b>29 systems</b> have been <b><a href="https://goo.gl/qMiH6x">registered</a></b> so far-->   
+</div>
+
+<!--div class="yellowbar">
+Results available <a href="results/index.html">here</a>.<br /> 
+<b>News:</b>  <a href="./special_issue.html">Special issue</a> for biomedical-themed contributions.
+<!--<a href="results/phenotype/index.html">Phenotype track winners</a> announced. -->
+</div-->
+
+<h1>Ontology Alignment Evaluation Initiative</h1>
+<h1>2017 Campaign</h1>
+
+<p>Since 2004, <a href="http://oaei.ontologymatching.org">OAEI</a> organises evaluation campaigns aiming at evaluating ontology matching technologies.
+</p>
+
+<h2>Problems</h2>
+
+<p>The OAEI 2017 campaign will once again confront ontology matchers to
+  ontology and data sources to be matched.
+This year, the following test sets are available:
+
+<dl compact="1">
+
+<!--dt><a href="benchmarks/index.html">benchmark</a> <a href="seals-eval.html"><img width="30" border="0" src="../seals-logo.jpg"/></a></dt><dd>
+  Like in previous campaigns, a <b>systematic benchmark series</b> has 
+  to be matched. The goal of this benchmark series is to identify the areas in 
+  which each alignment algorithm is strong and weak. The test is not
+  anymore based on the very same dataset that has been used from 2004
+  to 2010. We are now able to generate undisclosed tests with the same
+  structure. They provide strongly comparable results and allow for
+  testing scalability.</dd-->
+
+<dt><a href="anatomy/index.html">anatomy</a> <a href="seals-eval.html"><img width="30" border="0" src="../seals-logo.jpg"/></a></dt><dd>The <b>anatomy</b>
+  real world case is about matching the Adult Mouse Anatomy (2744 classes) and the NCI Thesaurus (3304 classes) describing the human anatomy.</dd>
+
+<dt><a href="conference/index.html">conference</a> <a href="seals-eval.html"><img width="30" border="0" src="../seals-logo.jpg"/></a></dt>
+<dd>
+The goal of the track is to find alignments within a collection of ontologies describing the domain of organising conferences. Additionally, 'complex correspondences' are also very welcome. Alignments will be evaluated automatically against reference alignments also considering its uncertain version presented at ISWC 2014. Summary results along with detail performance results for each ontology pair (test case) and comparison with tools' performance from last years will be provided.</dd>
+
+<dt><a href="multifarm/index.html">Multifarm</a> <a href="seals-eval.html"><img width="30" border="0" src="../seals-logo.jpg"/></a></dt>
+<dd>
+This dataset is composed of a subset of the Conference dataset, translated in nine different languages (Arabic, Chinese, Czech, Dutch, French, German, Portuguese,  Russian, and Spanish) and the corresponding alignments between these ontologies. Based on these test cases, it is possible to evaluate and compare the performance of matching approaches with a special focus on multilingualism. 
+</dd>
+
+<!--
+<dt><a href="library/index.html">Library</a> <a href="seals-eval.html"><img width="30" border="0" src="../seals-logo.jpg"/></a></dt>
+<dd>
+The library track is a real-word task to match the STW and the TheSoz social science thesauri in SKOS. The goal of this track is to find whether the matchers can handle these lightweight ontologies including a huge amount of concepts and additional descriptions. Results will be evaluated both against a reference alignment and through manual scrutiny of alignments.
+</dd>
+-->
+
+<dt><a href="http://sws.ifi.uio.no/oaei/interactive/">Interactive matching evaluation</a>
+  (interactive) <a href="seals-eval.html"><img width="30" border="0" src="../seals-logo.jpg"/></a></dt>
+<dd>
+This track offers the possibility to compare different interactive matching tools which require user interaction. 
+The goal is to show if user interaction can improve the matching results, which methods are most promising and how many 
+interactions are necessary. All participating systems are evaluated using an oracle which bases on the reference alignment. 
+Using the SEALS client, the matching system only needs to be slightly adapted to participate to this track.
+</dd>
+
+
+
+<dt><a href="http://www.cs.ox.ac.uk/isg/projects/SEALS/oaei/">Large Biomedical Ontologies</a> (largebio) <a href="seals-eval.html"><img width="30" border="0" src="../seals-logo.jpg"/></a></dt>
+<dd>
+This track consists of finding alignments between the Foundational Model of
+Anatomy (FMA), SNOMED CT, and the National Cancer Institute Thesaurus (NCI).
+These ontologies are semantically rich and contain tens of thousands of
+classes. UMLS Metathesaurus has been selected as the basis for the track
+reference alignments.
+</dd>
+
+
+<dt><a href="http://sws.ifi.uio.no/oaei/phenotype/">Disease and Phenotype</a> (phenotype) <a href="seals-eval.html"><img width="30" border="0" src="../seals-logo.jpg"/></a><a href="http://www.pistoiaalliance.org/projects/ontologies-mapping/"><img width="80" border="0" src="./phenotype/pistoia.png"/></a></dt></dt>
+<dd>
+The <a href="http://www.pistoiaalliance.org/projects/ontologies-mapping/">Pistoia Alliance Ontologies Mapping project</a> team organises and sponsors this 
+track based on a real use case where it is required to find alignments between 
+disease and phenotype ontologies. Specifically, the selected ontologies are the Human Phenotype (HP) Ontology, the Mammalian Phenotype (MP) Ontology, 
+the Human Disease Ontology (DOID), the Orphanet and Rare Diseases Ontology (ORDO), the Medical Subject Headings (MESH) ontology, and the Online Mendelian Inheritance in Man (OMIM) onbtology.
+</dd>
+
+
+
+<dt><a href="http://web.informatik.uni-mannheim.de/oaei/pm17/">Process Model Matching</a> (pm) <a href="seals-eval.html"><img width="30" border="0" src="../seals-logo.jpg"/></a></dt>
+<dd>
+This track is a spinoff from the Process Model Matching Contest. It is concerned with the task of matching process models, 
+originally represented in <a href="https://en.wikipedia.org/wiki/Business_Process_Modeling_Language">BPML</a>. These models have been converted to an ontological representation. The resulting matching 
+task is a special case of an interesting instance matching problem. 
+</dd>
+
+<a name="instance" />
+<dt><a href="http://islab.di.unimi.it/content/im_oaei/2017/">Instance Matching</a> (im) <a href="seals-eval.html"><img width="30" border="0" src="../seals-logo.jpg"/></a></dt>
+<dd>
+The Instance Matching Track aims at evaluating the performance of matching tools when the goal is to detect the degree of similarity between pairs of instances expressed in the form of OWL Aboxes. The track consists of different independent tasks and participants can submit results related to one, more, or even all the expected tasks.
+</dd>
+
+<a name="hobbit" />
+<dt><a href="https://project-hobbit.eu/challenges/om2017/">HOBBIT Link Discovery</a> (hobbit) <a href="https://project-hobbit.eu/challenges/om2017/"><img width="30" border="0" src="hobbit.png"/></a></dt>
+<dd>
+In this track two benchmark generators are proposed to deal with link discovery for spatial data where spatial data are
+represented as trajectories (i.e., sequences of longitude, latitude pairs). This new track is based on the 
+<a href="https://project-hobbit.eu/outcomes/hobbit-platform/">HOBBIT platform</a> and it requires to follow different 
+intructions from the SEALS-based tracks (see details <a href="https://project-hobbit.eu/challenges/om2017/om2017-tasks/">here</a>).  
+</dd>
+
+
+
+<!--
+<a name="oa4qa" />
+<dt><br/><a href="http://www.cs.ox.ac.uk/isg/projects/Optique/oaei/oa4qa/">Ontology Alignment for Query Answering</a> (oa4qa)</dt> 
+<dd>
+This track will not follow the classical ontology alignment evaluation with respect to a set of reference alignments. Precision and Recall will be calculated with respect to the ability of the generated alignments to answer a set of queries in a ontology-based data access scenario where several ontologies exist. In the OAEI 2017 campaign the datasets will be based on the <a href="conference/index.html">Conference track</a>.
+</dd>
+</dl> 
+</p>
+-->
+
+<h2>Evaluation</h2>
+
+<p><span class="important">
+This year we will start adopting the <a href="https://project-hobbit.eu/outcomes/hobbit-platform/">HOBBIT platform</a> 
+to conduct the evaluation of the <a href="https://project-hobbit.eu/challenges/om2017/">HOBBIT Link Discovery</a></span> track.
+Systems willing to participate in this track need to follow the instructions listed <a href="https://project-hobbit.eu/challenges/om2017/om2017-tasks/">here</a>.</p>
+
+<p>The rest of OAEI 2017 tracks will continue the procedure of running using the SEALS
+  infrastructure introduced in 2011.
+  The overall process of participation including how to accomplish tool
+bundling using the SEALS pltaform is <a href="seals-eval.html">described here</a>.</p>  
+ 
+ <p>
+  The results will be reported at
+  the <a href="http://om2017.ontologymatching.org">Ontology matching
+  workshop</a> of the <a href="http://iswc2017.semanticweb.org/">16th
+  International Semantic Web Conference</a> (ISWC 2017).
+</p>
+
+
+
+<h3>Evaluation rules</h3>
+
+<p>
+Participants will be evaluated with respect to
+<b>all of the OAEI tracks</b> even though the system 
+might be specialized for some specific kind of matching problems.
+We know that this can be a problem for some systems that have specifically been developed for, e.g., matching biomedical ontologies; 
+but this point can still be emphasized in the specific results paper about the system in case the results generated for some specific track are not good at all.
+</p>
+
+<p>
+Please note that, a matcher may want to behave differently given what it is 
+provided with as ontologies; however, this should not be based on features 
+specific of the tracks (e.g., there is a specific string in the URL, or a specific
+class name) but on features of the ontologies (e.g., there are no instances or
+labels are in German). Check the <a href="http://oaei.ontologymatching.org/doc/oaei-rules.2.html">OAEI rules here</a>.
+</p>
+
+
+<p>
+Systems that rely or are derived from other ontology matching systems should: (a) clearly state the system they rely on, and (b) what was changed from / added to the original system.
+</p>
+
+<h3>Evaluation process</h3>
+
+<p>
+Following the successful campaigns since 2011, most of the tests will be evaluated using the SEALS infrastructure.  
+The evaluation process is detailed <a href="seals-eval.html">here</a>, and in general it follows the same pattern as in past years:
+<ol>
+<li>Participants <a href="https://goo.gl/qMiH6x">register their tool</a>;</li>
+<li>SEALS participants wrap their tools as a <a href="seals-eval.html">SEALS package</a>;</li>
+<li>HOBBIT participants follow the <a href="https://project-hobbit.eu/challenges/om2017/om2017-tasks/">instructions for the HOBBIT platform</a>;</li>
+<li>SEALS participants can test their tools with the <a href="seals-eval.html#tutorial">SEALS client</a> on the
+ data-sets provided with reference alignments by each track organizer. The ids of those data-sets are given in each track web page;</li>
+ <li>HOBBIT participants can test their system online (see details <a href="https://github.com/hobbit-project/platform/wiki/Experiments">here</a>); 
+<li>Organizers run the evaluation with both blind and published
+ datasets;</li>
+<!--li>For some tracks, results are (automatically) available on the <a href="http://www.seals-project.eu/">SEALS portal</a>. </li-->
+</ol>
+</p>
+
+
+<h3>Visual support for the evaluation (optional use)</h3>
+
+<p>
+ <i>AlignmentCubes</i> is an interactive visual environment which provides comparative exploration and evaluation of multiple ontology alignments at different level of detail. 
+ AlignmenCubes can support <i>(a)</i> developers during the process of developing and debugging alignment algorithms, <i>(b)</i>  evaluators to make observations at different level of detail, and 
+  <i>(c)</i> data integrators to select and configure their tools as well as to develop and debug alignments. 
+  More information can be found <a href="http://www.ida.liu.se/~patla00/publications/ISWC17/">here</a>.
+<!--Often evaluations of ontology alignments rely on calculating precision, recall and F-measure. 
+These measures, however, provide only an overall assessment of the alignments' quality and can be calculated if reference alignments are available.
+You can download the tool with a user manual as well as example datasets and a screencast here.
+-->
+ 
+</p>
+
+
+
+<h2><a name="schedule">Schedule</a></h2>
+
+<p>
+<dl compact="1">
+<dt><b><strike></strike>June 1st</b></dt><dd> (preliminary) datasets available.</dd>
+<dt><b><strike>June 30th</strike> July 15th</b></dt><dd>datasets are frozen.</dd>
+<dt><b>June 30th</b> (still open)</dt><dd>participants <a href="https://goo.gl/qMiH6x">register their tool</a> (mandatory).</dd>
+<dt><b><strike></strike>July 15th</b></dt><dd>submission is open, zipped SEALS packages (e.g., LogMap.zip) can be submitted using <a href="https://goo.gl/xEwpiq">this form</a> (requires a google account and a valid email).</dd>
+<dt><b><strike></strike>July 31st</b></dt><dd>participants submit preliminary wrapped versions (zip file) of their tools (mandatory).</dd>
+<dt><b><strike></strike>August 31st</b></dt><dd>participants submit final versions of their tools (zip file). SEALS tracks.</dd>
+<dt><b><strike></strike>September 15th</b></dt><dd>participants submit final versions of their tools. HOBBIT track.</dd>
+<dt><b><strike></strike>September 30th</b></dt><dd>evaluation is executed and results are analyzed. SEALS and HOBBIT tracks.</dd>
+<dt><strike><b>September 30th</b></strike><b>October 10th</b></dt><dd>Preliminary version of system papers due. Submit PDF paper (e.g., LogMap_prelim.pdf) using <a href="https://goo.gl/aKtaHc">this form</a> (requires a google account and a valid email).</dd>
+<dt><strike></strike><b>October 21st</b></dt><dd><a href="http://om2017.ontologymatching.org">Ontology matching workshop</a>.</dd>
+<dt><strike></strike><b>November 15th</b></dt><dd>Final version of system papers due. Submit PDF (e.g., LogMap_final.pdf) paper using <a href="https://goo.gl/aKtaHc">this form</a> (requires a google account and a valid email).</dd>
+</dl>
+</p>
+
+<!--
+<a name="si"></a>
+<p>
+<b>THIS WAS 2016</b>
+Authors of (1) the best biomedical-themed papers, 
+(2) system papers with competitive results in the OAEI biomedical-themed tracks, and
+(3) biomedical-themed dataset descriptions, will be invited to submit an extended version of their contributions to be considered
+in a <b>special issue of the <a href="./special_issue.html">Journal of Biomedical Semantics (JBMS)</a></b>.
+</p>
+-->
+
+<h2>Presentation</h2>
+
+<p>From the results of the experiments, participants are expected
+  to provide the organisers with a paper to be published in the proceedings   
+  of the Ontology matching workshop. 
+  The paper should be no more than 8 pages long and formatted using the
+  <a href="http://www.springer.com/lncs">LNCS Style</a>.
+  To ensure easy comparability among the participants it has to follow the given 
+  outline.
+  
+  <!--The above mentioned paper must be sent in PDF format by 
+  October 5th to
+  Jerome . Euzenat (a) inria . fr with copy to
+  pavel (a) dit . unitn . it and to  ernesto . jimenez . ruiz (a) gmail . com--> 
+  
+  </p>
+  
+<!--<p>Participants may also submit a longer version of their paper,
+  with a length justified by its technical content,
+  to be published online in the CEUR-WS collection and on the OAEI web
+  site (this last paper will be due just before the workshop).</p>
+-->  
+  
+  
+<p>The outline of the paper is as below (see templates for more details):
+<ol type="1">
+  <li>Presentation of the system<br />
+    <ol>
+      <li> State, purpose, general statement</li>
+      <li> Specific techniques used</li>
+
+      <li> Adaptations made for the evaluation</li>
+      <li> Link to the system and parameters file</li>
+      <li> Link to the set of provided alignments (in align format)</li>
+    </ol>
+  </li>
+  <li>Results<br />
+
+    <ul 1>
+      <li>2.x) a comment for each dataset performed</li>
+    </ul>
+  <li>General comments<br />
+    (not necessaryly by putting the section below but preferably in
+    this order).
+    <ol>
+      <li> Comments on the results (strength and weaknesses)</li>
+
+      <li> Discussions on the way to improve the proposed system</li>
+      <li> Comments on the OAEI procedure (including comments on the SEALS evaluation, if relevant)</li>
+      <li> Comments on the OAEI test cases</li>
+      <li> Comments on the OAEI measures</li>
+      <li> Proposed new measures</li>
+
+    </ol>
+  </li>
+  <li>Conclusions<br />
+  <li>References<br />
+</ol>
+</p>
+<p>
+These papers are not peer-reviewed and are here to keep track of the
+participants and the description of matchers which took part in the
+campaign.
+</p>
+<p>The <a href="results/index.html"></a>results from both selected participants and organizers were presented 
+  at the <a href="http://om2017.ontologymatching.org">International Workshop on Ontology
+  Matching</a> collocated with <a href="http://iswc2017.semanticweb.org">ISWC 2017</a> taking
+  place at Wien (AT) in October 21st, 2017.</p>
+
+<div class="address">
+<div class="footer">http://oaei.ontologymatching.org/2017/</div>
+</div>
+</body>
+</html>
+
